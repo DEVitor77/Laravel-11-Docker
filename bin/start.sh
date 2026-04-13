@@ -6,7 +6,7 @@ echo "Iniciando o ambiente Docker..."
 cd "$(dirname "$0")/.."
 
 # Subir os serviços definidos no docker-compose.yml
-docker compose up --build -d
+docker compose up --build -d  # ← Alterado aqui
 
 # Verifica se o Docker Compose foi bem-sucedido
 if [ $? -eq 0 ]; then
