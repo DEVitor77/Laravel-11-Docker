@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Instalar Node.js e npm
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+RUN curl -fsSL https://deb.nodesource.com/setup_25.x | bash - \
     && apt-get install -y nodejs
 
 # Adicionar repositório do YARN (método moderno)

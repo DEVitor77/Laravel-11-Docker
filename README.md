@@ -9,7 +9,7 @@
     para uma execução mais rápida de permissão de admin para o arquivo
         $ sudo chmod 777 -R start.sh
             ou 
-        $ sudo ./start.sh
+        $ docker 
     O próprio start.sh executa o Docker em segundo plano para não travar o terminal em execução
     Toda estrutura do sistema será copiado para dentro dos containers
 
