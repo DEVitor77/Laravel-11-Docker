@@ -36,3 +36,12 @@ Route::any('/any', function () {
 Route::match (['get', 'post'], 'match', function () {
     return 'Esta rota responde apenas a requisições GET e POST';
 });
+
+/** Rota para a página "Produto"
+ * Esta rota responde a requisições GET para a URL "produto/{id}" e retorna uma string indicando o ID do produto passado como parâmetro na URL. O parâmetro {id} é um placeholder que pode ser substituído por qualquer valor, permitindo que a rota seja dinâmica e responda a diferentes IDs de produtos.
+ * Esta rota também inclui um segundo parâmetro {cat} para a categoria do produto, permitindo que a rota seja ainda mais dinâmica e responda a diferentes combinações de ID e categoria de produtos.
+*/
+Route::get('produto/{id}/{cat?}', function ($id, $cat = "") {
+    return "O Id do produto é:". $id . "<br>" . " E a categoria é: " . $cat;
+});
+
